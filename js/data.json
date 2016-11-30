@@ -1,8 +1,8 @@
 [
-    {
-         "firstName": "John",
-         "lastName": "Smith",
-         "age": 25,
+         {
+         "firstName": "Donald",
+         "lastName": "Trump",
+         "age": 70,
          "address":
          {
              "streetAddress": "21 2nd Street",
@@ -22,15 +22,61 @@
              }
          ]
      },
-     {
-         "firstName": "Joe",
-         "lastName": "Doe",
-         "age": 22,
+         {
+         "firstName": "Jill",
+         "lastName": "Stein",
+         "age": 66,
          "address":
          {
-             "streetAddress": "1222 1st Street",
+             "streetAddress": "21 2nd Street",
              "city": "New York",
-             "state": "NY",
+             "state": "MA",
+             "postalCode": "10021"
+         },
+         "phoneNumber":
+         [
+             {
+               "type": "home",
+               "number": "212 555-1234"
+             },
+             {
+               "type": "fax",
+               "number": "646 555-4567"
+             }
+         ]
+     },
+         {
+         "firstName": "Gary",
+         "lastName": "Johnson",
+         "age": 63,
+         "address":
+         {
+             "streetAddress": "21 2nd Street",
+             "city": "New York",
+             "state": "NM",
+             "postalCode": "10021"
+         },
+         "phoneNumber":
+         [
+             {
+               "type": "home",
+               "number": "212 555-1234"
+             },
+             {
+               "type": "fax",
+               "number": "646 555-4567"
+             }
+         ]
+     },
+         {
+         "firstName": "Hillary",
+         "lastName": "Clinton",
+         "age": 69,
+         "address":
+         {
+             "streetAddress": "21 2nd Street",
+             "city": "New York",
+             "state": "NM",
              "postalCode": "10021"
          },
          "phoneNumber":
@@ -45,4 +91,5 @@
              }
          ]
      }
+
  ]

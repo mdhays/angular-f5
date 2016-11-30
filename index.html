@@ -9,9 +9,32 @@
   <h1>Angular Refresher</h1>
 
   <div ng-controller="MyController">
+
+    <div class="searchArea">
+      <h2>Artist Directory</h2>
+      <label>search:</label>
+      <input ng-model="query" placeholder="Search for an artist" autofocus>
+      
+      <label>by:
+        <select ng-model="artistOrder">
+          <option value="firstName">First Name</option>
+          <option value="lastName">Last Name</option>
+        </select>
+      </label>
+
+      <label>
+        <input type="radio" ng-model="direction" name="direction" checked>
+        ascending
+      </label>
+        <input type="radio" ng-model="direction" name="direction" value="reverse">
+        descending
+      </label>
+
+    </div>
+
     <ul>
-      <li ng-repeat="item in artists">
-        <h2>{{item.firstName}}, {{item.lastName}}</h2>
+      <li ng-repeat="item in artists | filter: query | orderBy: artistOrder: direction">
+        <h2>{{item.firstName}} {{item.lastName}}</h2>
         <h3>{{item.address.state}}</h3>
       </li>
     </ul>
