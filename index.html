@@ -3,40 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Angular Refresher</title>
-    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>          <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/controllers.js"></script>
   </head>
   <h1>Angular Refresher</h1>
 
-  <div ng-controller="MyController">
+  <div ng-view>
 
-    <div class="searchArea">
-      <h2>Artist Directory</h2>
-      <label>search:</label>
-      <input ng-model="query" placeholder="Search for an artist" autofocus>
-      
-      <label>by:
-        <select ng-model="artistOrder">
-          <option value="firstName">First Name</option>
-          <option value="lastName">Last Name</option>
-        </select>
-      </label>
 
-      <label>
-        <input type="radio" ng-model="direction" name="direction" checked>
-        ascending
-      </label>
-        <input type="radio" ng-model="direction" name="direction" value="reverse">
-        descending
-      </label>
-
-    </div>
-
-    <ul>
-      <li ng-repeat="item in artists | filter: query | orderBy: artistOrder: direction">
-        <h2>{{item.firstName}} {{item.lastName}}</h2>
-        <h3>{{item.address.state}}</h3>
-      </li>
-    </ul>
   </div>
 </html>

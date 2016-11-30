@@ -1,8 +1,9 @@
-var myApp = angular.module('myApp', []);
+var candidateControllers = angular.module('candidateControllers', []);
 
-myApp.controller('MyController', ['$scope', '$http', function($scope, $http) {
+candidateControllers.controller('ListController', ['$scope', '$http', function($scope, $http) {
   $http.get('js/data.json').success(function(data) {
-    $scope.artists = data;
+    $scope.candidates = data;
+    $scope.candidateOrder = "firstName";
     console.log(data);
   });
 }]);
