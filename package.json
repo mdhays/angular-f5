@@ -1,0 +1,22 @@
+{
+  "name": "angular-f5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdhays/angular-f5.git"
+  },
+  "author": "Matthew Hays <mdhays1995@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mdhays/angular-f5/issues"
+  },
+  "homepage": "https://github.com/mdhays/angular-f5#readme",
+  "dependencies": {
+    "bower": "^1.8.0"
+  }
+}
