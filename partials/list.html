@@ -1,0 +1,29 @@
+<section class="candidatePage"></section>
+    <div class="searchArea">
+      <h2>Candidate Directory</h2>
+      <label>search:</label>
+      <input ng-model="query" placeholder="Search for an candidate" autofocus>
+      
+      <label>by:
+        <select ng-model="candidateOrder">
+          <option value="firstName">First Name</option>
+          <option value="lastName">Last Name</option>
+        </select>
+      </label>
+
+      <label>
+        <input type="radio" ng-model="direction" name="direction" checked>
+        ascending
+      </label>
+        <input type="radio" ng-model="direction" name="direction" value="reverse">
+        descending
+      </label>
+
+    </div>
+
+    <ul ng-show="query">
+      <li ng-repeat="item in candidates | filter: query | orderBy: candidateOrder: direction">
+        <a href="#/details/{{candidates.indexOf(item)}}"><h2>{{item.firstName}} {{item.lastName}}</h2></a>
+        <h3>{{item.address.state}}</h3>
+      </li>
+    </ul>
